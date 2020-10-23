@@ -5,27 +5,17 @@
   </div>
 </template>
 <script>
-import MainTabBar from "@/components/MainTabBar";
-import { request } from "@/network/request";
+import MainTabBar from '@/components/content/maintabbar/MainTabBar'
+import { request } from '@/network/request'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     MainTabBar,
   },
-};
-
-request({
-  url: "/home/multidata",
-})
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+}
 </script>
 
 <style>
-@import "./assets/css/base.css";
+@import './assets/css/base.css';
 </style>

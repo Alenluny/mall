@@ -4,9 +4,8 @@
 
 <script>
 export default {
-  name: "Profile",
+  name: "Profile"
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

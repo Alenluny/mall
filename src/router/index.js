@@ -1,37 +1,36 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '',
-    redirect: '/home'
+    path: "",
+    redirect: "/home"
   },
   {
-    path: '/home',
-    component: () => import('../views/home/Home')
+    path: "/home",
+    component: () => import("../views/home/Home")
   },
   {
-    path: '/category',
-    component: () => import('../views/category/Category')
+    path: "/category",
+    component: () => import("../views/category/Category")
   },
   {
-    path: '/cart',
-    component: () => import('../views/cart/Cart')
+    path: "/cart",
+    component: () => import("../views/cart/Cart")
   },
   {
-    path: '/profile',
-    component: () => import('../views/profile/Profile')
-  },
-
-]
+    path: "/profile",
+    component: () => import("../views/profile/Profile")
+  }
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes
-})
+});
 
 //全局导航守卫
 // router.beforeEach((to, from, next) => {
@@ -39,4 +38,4 @@ const router = new VueRouter({
 //   next()
 // })
 
-export default router
+export default router;
